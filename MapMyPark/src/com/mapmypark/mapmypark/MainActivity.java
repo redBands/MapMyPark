@@ -10,6 +10,7 @@ import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.*;
 import com.google.maps.android.clustering.Cluster;
 //import com.google.maps.android.MarkerManager;
+//import com.google.maps.android.MarkerManager.Collection;
 import com.google.maps.android.clustering.ClusterManager;
 
 import android.os.Bundle;
@@ -128,7 +129,7 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
     	}
     }*/
     
-    //add markers to marker manager
+    //add parks to cluster manager
     private void addItems(){
     	//List <Park> parkList = new LinkedList<Park>();
     	//MarkerManager.Collection parks = markMan.newCollection("parks");
@@ -144,12 +145,7 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
     		mO.title(aPark.getTitle());
     		parks.addMarker(mO);
     	}*/
-		for (Park aPark : parkList)
-        {
-        	//MyItem anItem = new MyItem(aPark.getPosition().latitude,
-        			//aPark.getPosition().longitude);
-        	mClusterManager.addItem(aPark);
-        }
+		mClusterManager.addItems(parkList);
     }
     
     private void setUpMapIfNeeded() {
@@ -172,12 +168,13 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         // Initialise the manager with the context and the map.
         // (Activity extends context, so we can pass 'this' in the constructor.)
         mClusterManager = new ClusterManager<Park>(this, mMap);
+        mClusterManager.setRenderer(new ParkClusterRenderer(this, mMap, mClusterManager));
 
         // Point the map's listeners at the listeners implemented by the cluster
         // manager.
         mMap.setOnCameraChangeListener(mClusterManager);
         mMap.setOnMarkerClickListener(mClusterManager);
-
+        
         // Add cluster items (markers) to the cluster manager.
         addItems();
     }
@@ -187,9 +184,10 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
 		
 	}
 	@Override
-	public boolean onClusterItemClick(com.mapmypark.mapmypark.Park item) {
+	public boolean onClusterItemClick(com.mapmypark.mapmypark.Park aPark) {
 		// TODO Auto-generated method stub
-		return false;
+		aPark.getTitle();
+		return true;
 	}
 	@Override
 	public void onClusterInfoWindowClick(
