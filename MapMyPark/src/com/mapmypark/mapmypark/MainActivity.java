@@ -8,13 +8,14 @@ import android.app.Activity;
 import com.google.android.gms.maps.*;
 //import com.google.android.gms.maps.GoogleMap.OnCameraChangeListener;
 import com.google.android.gms.maps.model.*;
+import com.google.maps.android.clustering.Cluster;
 //import com.google.maps.android.MarkerManager;
 import com.google.maps.android.clustering.ClusterManager;
 
 import android.os.Bundle;
 
 //@SuppressLint("NewApi")
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements ClusterManager.OnClusterClickListener<Park>, ClusterManager.OnClusterInfoWindowClickListener<Park>, ClusterManager.OnClusterItemClickListener<Park>, ClusterManager.OnClusterItemInfoWindowClickListener<Park> {
 	
 	private GoogleMap mMap;
 	private ParksDB mDB;
@@ -24,7 +25,7 @@ public class MainActivity extends Activity {
 	//private LatLng sw = new LatLng(55.921594, -3.216367);
 	//private LatLngBounds currentBounds = new LatLngBounds(sw,ne);
 	// Declare a variable for the cluster manager.
-    private ClusterManager<MyItem> mClusterManager;
+    private ClusterManager<Park> mClusterManager;
 	//private MarkerManager markMan;
 	//private MarkerManager.Collection parks = markMan.newCollection("parks");
 
@@ -145,8 +146,9 @@ public class MainActivity extends Activity {
     	}*/
 		for (Park aPark : parkList)
         {
-        	MyItem anItem = new MyItem(aPark.getLat(), aPark.getLng());
-        	mClusterManager.addItem(anItem);
+        	//MyItem anItem = new MyItem(aPark.getPosition().latitude,
+        			//aPark.getPosition().longitude);
+        	mClusterManager.addItem(aPark);
         }
     }
     
@@ -169,7 +171,7 @@ public class MainActivity extends Activity {
         
         // Initialise the manager with the context and the map.
         // (Activity extends context, so we can pass 'this' in the constructor.)
-        mClusterManager = new ClusterManager<MyItem>(this, mMap);
+        mClusterManager = new ClusterManager<Park>(this, mMap);
 
         // Point the map's listeners at the listeners implemented by the cluster
         // manager.
@@ -179,4 +181,26 @@ public class MainActivity extends Activity {
         // Add cluster items (markers) to the cluster manager.
         addItems();
     }
+	@Override
+	public void onClusterItemInfoWindowClick(com.mapmypark.mapmypark.Park item) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean onClusterItemClick(com.mapmypark.mapmypark.Park item) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void onClusterInfoWindowClick(
+			Cluster<com.mapmypark.mapmypark.Park> cluster) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean onClusterClick(
+			Cluster<com.mapmypark.mapmypark.Park> cluster) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

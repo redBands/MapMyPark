@@ -96,8 +96,8 @@ public class ParksDB extends SQLiteOpenHelper {
     	 //1. create ContentValues to add key "column"/value
     	 ContentValues values = new ContentValues();
     	 values.put(FIELD_REF, aPark.getRef()); //get OSM ref
-    	 values.put(FIELD_LAT, aPark.getLat()); //get lat
-    	 values.put(FIELD_LNG, aPark.getLng()); //get lng
+    	 values.put(FIELD_LAT, aPark.getPosition().latitude); //get lat
+    	 values.put(FIELD_LNG, aPark.getPosition().longitude); //get lng
     	 values.put(FIELD_TITLE, aPark.getTitle()); //get title
     	 values.put(FIELD_SNIPPET, aPark.getSnippet()); //get snippet
     	 
@@ -134,8 +134,7 @@ public class ParksDB extends SQLiteOpenHelper {
     	 Park aPark = new Park();
     	 aPark.setId(Integer.parseInt(cursor.getString(0)));
     	 aPark.setRef(cursor.getInt(1));
-    	 aPark.setLat(cursor.getDouble(2));
-    	 aPark.setLng(cursor.getDouble(3));
+    	 aPark.setPosition(cursor.getDouble(2), cursor.getDouble(3));
     	 aPark.setTitle(cursor.getString(4));
     	 aPark.setSnippet(cursor.getString(5));
     	 
@@ -164,8 +163,7 @@ public class ParksDB extends SQLiteOpenHelper {
                  park = new Park();
                  park.setId(Integer.parseInt(cursor.getString(0)));
                  park.setRef(cursor.getInt(1));
-                 park.setLat(cursor.getDouble(2));
-                 park.setLng(cursor.getDouble(3));
+                 park.setPosition(cursor.getDouble(2), cursor.getDouble(3));
                  park.setTitle(cursor.getString(4));
                  park.setSnippet(cursor.getString(5));
   

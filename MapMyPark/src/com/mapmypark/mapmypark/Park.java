@@ -1,21 +1,22 @@
 package com.mapmypark.mapmypark;
 
-public class Park {
+import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.clustering.ClusterItem;
+
+public class Park implements ClusterItem {
 	
 	private int id;
 	private int ref;
-	private double lat;
-	private double lng;
-    private String title;
+	private LatLng parkPosition;
+	private String title;
     private String snippet;
  
     public Park(){}
  
-    public Park(int aRef, double aLat, double aLng, String aTitle, String aSnippet) {
+    public Park(LatLng position, int aRef, String aTitle, String aSnippet) {
         super();
         ref = aRef;
-        lat = aLat;
-        lng = aLng;
+        parkPosition = position;
         title = aTitle;
         snippet = aSnippet;
     }
@@ -40,24 +41,9 @@ public class Park {
     	return ref;
     }
     
-    public void setLat(double aLat)
+    public void setPosition(double aLat, double aLng)
     {
-    	lat = aLat;
-    }
-    
-    public double getLat()
-    {
-    	return lat;
-    }
-    
-    public void setLng(double aLng)
-    {
-    	lng = aLng;
-    }
-    
-    public double getLng()
-    {
-    	return lng;
+    	parkPosition = new LatLng(aLat, aLng);
     }
     
     public void setTitle(String aTitle)
@@ -82,8 +68,15 @@ public class Park {
  
     @Override
     public String toString() {
-        return "Park [ref=" + ref + ", lat=" + lat + ", lng=" + lng + "," +
+        return "Park [ref=" + ref + ", lat=" + parkPosition.latitude +
+        		", lng=" + parkPosition.longitude + "," +
         		"title=" + title + ", snippet= " + snippet + "]";
     }
+
+	@Override
+	public LatLng getPosition() {
+		// TODO Auto-generated method stub
+		return parkPosition;
+	}
 
 }
