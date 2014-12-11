@@ -1,8 +1,12 @@
 package com.mapmypark.mapmypark;
 
 import java.io.*;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
+
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -147,7 +151,7 @@ public class ParksDB extends SQLiteOpenHelper {
      
      // Get All Parks
      public List<Park> getAllParks() {
-         List<Park> parks = new LinkedList<Park>();
+         List<Park> parks = new ArrayList<Park>();
   
          // 1. build the query
          String query = "SELECT  * FROM " + DATABASE_TABLE;
@@ -290,8 +294,8 @@ public class ParksDB extends SQLiteOpenHelper {
 	    
 	    // Get park  within a defined Lat Lng range
 	    
-	    public List<Integer> getParksInView(Double nLat, Double sLat, Double eLng, Double wLng) {
-	         List<Integer> iDs = new LinkedList<Integer>();
+	    public List<Park> getParksInRange(Double nLat, Double sLat, Double eLng, Double wLng) {
+	         List<Park> parks = new ArrayList<Park>();
 	         // get reference to writable DB
 	         SQLiteDatabase db = this.getWritableDatabase();
 	         
@@ -301,21 +305,44 @@ public class ParksDB extends SQLiteOpenHelper {
 	    					 COLUMNS, // b. COLUMN NAMES
 	    					 FIELD_LAT + " BETWEEN " + "?" + " and " + "?" + " and "
 	    							 + FIELD_LNG + " BETWEEN " + "?" + " and " + "?", // c. SELECTIONS
-	    					 new String[] { sLat.toString(),nLat.toString(),
-	    					 wLng.toString(), eLng.toString()}, // d. selections args
+	    					 new String[] { nLat.toString(),sLat.toString(),
+	    					 eLng.toString(), wLng.toString()}, // d. selections args
 	    			         null, // e. group by
 	    			         null, // f. having
 	    			         null, // g. order by
 	    			         null); // h. limit
 	  
 	         // go over each row, build park and add it to list
+	         Park park = null;
 	         if (cursor.moveToFirst()){	 //working
 	             do {
-	            	 // Add park id to iDs
-	            	 iDs.add(Integer.parseInt(cursor.getString(0)));
+	            	 park = new Park();
+	                 park.setId(Integer.parseInt(cursor.getString(0)));
+	                 park.setRef(cursor.getInt(1));
+	                 park.setPosition(cursor.getDouble(2), cursor.getDouble(3));
+	                 park.setTitle(cursor.getString(4));
+	                 park.setSnippet(cursor.getString(5));
+	  
+	                 // Add park to parks
+	                 parks.add(park);
+	            	 
 	             } while (cursor.moveToNext());
 	         }
-	    	 return iDs;
+	         System.out.println("size of visible parks list: " + parks.size());
+	    	 return parks;
 	    }
+
+		// Get park  within a defined Lat Lng range 2nd take
+	    public List<Park> getParksInRange2(LatLngBounds bounds) {
+	    	List<Park> parks = new ArrayList<Park>();
+	    	for (Park park: this.getAllParks()){
+	    		LatLng position = park.getPosition();
+	    		if (bounds.contains(position)) {
+					parks.add(park);
+				}
+	    	}
+	    	System.out.println("size of visible parks list: " + parks.size());
+	    	return parks;
+		}
 
 }
