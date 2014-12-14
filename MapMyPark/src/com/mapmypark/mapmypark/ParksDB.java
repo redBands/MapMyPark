@@ -63,6 +63,10 @@ public class ParksDB extends SQLiteOpenHelper {
    	
    	//String to hold database file path
    	private static String DB_FILE;
+   	
+   	// list to hold parks for addItems (parks)
+   	List<Park> parks;
+	
  
     /** Constructor */
     public ParksDB(Context context) {
@@ -70,7 +74,8 @@ public class ParksDB extends SQLiteOpenHelper {
         //this.mDB = getWritableDatabase();
         myContext = context;
         File outFile =myContext.getDatabasePath(DBNAME);
-        DB_FILE = outFile.getPath() ;
+        DB_FILE = outFile.getPath();
+        parks = new ArrayList<Park>();
     }
     
     /** This is a callback method, invoked when the method getReadableDatabase() / getWritableDatabase() is called
@@ -333,13 +338,19 @@ public class ParksDB extends SQLiteOpenHelper {
 	    }
 
 		// Get park  within a defined Lat Lng range 2nd take
-	    public List<Park> getParksInRange2(LatLngBounds bounds) {
-	    	List<Park> parks = new ArrayList<Park>();
-	    	for (Park park: this.getAllParks()){
+	    // this method should check new values against old ones and only add when necessary
+	    // this might fix the title and snippet bug and speed things up
+	    public List<Park> getParksInRange2(LatLngBounds bounds, List<Park> dbParks) {
+	    	for (Park park: dbParks){
 	    		LatLng position = park.getPosition();
-	    		if (bounds.contains(position)) {
-					parks.add(park);
-				}
+	    		if (!parks.contains(park)&& bounds.contains(position))
+	    		{
+	    			parks.add(park);
+	    		}
+	    		if (parks.contains(park)&& !bounds.contains(position))
+	    		{
+	    			parks.remove(park);
+	    		}
 	    	}
 	    	System.out.println("size of visible parks list: " + parks.size());
 	    	return parks;

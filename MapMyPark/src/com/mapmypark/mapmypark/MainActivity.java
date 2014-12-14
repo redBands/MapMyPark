@@ -10,6 +10,8 @@ import com.google.android.gms.maps.GoogleMap.OnCameraChangeListener;
 import com.google.android.gms.maps.model.*;
 import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 
 //@SuppressLint("NewApi")
@@ -24,6 +26,9 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
     private ClusterManager<Park> mClusterManager;
     // Declare a variable for the park cluster renderer
     private ParkClusterRenderer pcr;
+    private List<Park> parks;
+    LocationManager mLocationManager;
+    Location curLoc;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +38,11 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         //check map availability
         setUpMapIfNeeded();
         
-        // initiate renderer
-        //pcr = new ParkClusterRenderer(this, mMap, mClusterManager);
-        
         mDB = new ParksDB(this);
         
         try
         {
-        	String file = "england.csv";
+        	String file = "all_parks.csv";
         	mDB.importParks(file);
         }
         catch (IOException e)
@@ -55,10 +57,17 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         
         mMap.setMyLocationEnabled(true);
         
-        //attempt to limit the number of markers
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ne, 13));
-    	
-        //bounds = new LatLngBounds(sw, ne);
+        curLoc = getLastKnownLocation();
+        LatLng current = new LatLng(curLoc.getLatitude(),curLoc.getLongitude());
+        if (curLoc != null){
+        	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 10));
+        }
+        else{
+        	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ne, 10));
+        }
+        
+        // get all the parks into a list
+        parks = mDB.getAllParks();
         
         // Set up the Cluster Manager
         setUpClusterer();
@@ -66,15 +75,8 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
     
     //add parks to cluster manager
     private void addItems(){
-        /*bounds = mMap.getProjection().getVisibleRegion().latLngBounds;
-    	Projection projection = mMap.getProjection();
-    	System.out.println("bounds is: " + projection.toString());*/
-    	//bounds = pcr.getBounds();
-    	//bounds = new LatLngBounds(sw,ne);
-		System.out.println("bounds1 is: " + bounds.toString());
-    	//mClusterManager.addItems(mDB.getAllParks());
-		mClusterManager.clearItems();
-    	mClusterManager.addItems(mDB.getParksInRange2(bounds));
+        mClusterManager.clearItems();
+    	mClusterManager.addItems(mDB.getParksInRange2(bounds, parks));
     }
     
     private void setUpMapIfNeeded() {
@@ -92,7 +94,7 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
     
     private void setUpClusterer() {
     	// Position the map.
-        //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ne, 13));
+    	//mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 19));
         
         // Initialise the manager with the context and the map.
         // (Activity extends context, so we can pass 'this' in the constructor.)
@@ -101,7 +103,7 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         mClusterManager.setRenderer(pcr);
         //mClusterManager.setRenderer(new ParkClusterRenderer(this, mMap, mClusterManager));
         
-      // Point the map's listeners at the listeners implemented by the cluster
+        //Point the map's listeners at the listeners implemented by the cluster
         // manager.
         MultiListener ml = new MultiListener();
         ml.addListener(mClusterManager);
@@ -148,6 +150,23 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
 			Cluster<com.mapmypark.mapmypark.Park> cluster) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+	
+	private Location getLastKnownLocation() {
+	    mLocationManager = (LocationManager)getApplicationContext().getSystemService(LOCATION_SERVICE);
+	    List<String> providers = mLocationManager.getProviders(true);
+	    Location bestLocation = null;
+	    for (String provider : providers) {
+	        Location l = mLocationManager.getLastKnownLocation(provider);
+	        if (l == null) {
+	            continue;
+	        }
+	        if (bestLocation == null || l.getAccuracy() < bestLocation.getAccuracy()) {
+	            // Found best last known location: %s", l);
+	            bestLocation = l;
+	        }
+	    }
+	    return bestLocation;
 	}
 	
 	public class MultiListener implements OnCameraChangeListener
