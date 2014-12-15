@@ -58,9 +58,9 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         mMap.setMyLocationEnabled(true);
         
         curLoc = getLastKnownLocation();
-        LatLng current = new LatLng(curLoc.getLatitude(),curLoc.getLongitude());
         if (curLoc != null){
-        	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 10));
+        	LatLng current = new LatLng(curLoc.getLatitude(),curLoc.getLongitude());
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 10));
         }
         else{
         	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ne, 10));
