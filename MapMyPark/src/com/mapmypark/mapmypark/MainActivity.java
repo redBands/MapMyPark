@@ -60,10 +60,10 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         curLoc = getLastKnownLocation();
         if (curLoc != null){
         	LatLng current = new LatLng(curLoc.getLatitude(),curLoc.getLongitude());
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 10));
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(current, 13));
         }
         else{
-        	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ne, 10));
+        	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ne, 13));
         }
         
         // get all the parks into a list
