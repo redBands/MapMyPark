@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Map My Park</string>
-    <string name="title">Map My Park</string>
+    <string name="title">Park Map</string>
     <string name="action_settings">Settings</string>
 
 </resources>

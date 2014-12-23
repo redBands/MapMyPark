@@ -1,53 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="name" value="app: com.mapmypark.mapmypark" />
+        <option name="packageNamePattern" value="com.mapmypark.mapmypark" />
+      </filter>
+    </filters>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.mapmypark.mapmypark" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="418a17bc-6835-4d50-954c-c1e23a8680ad" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\all_edinburgh.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\all_parks.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\all_scotland.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\all_scotland_playparks.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\e-australia.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\england.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\england.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\ireland.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\newzealand.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\parkfindersqlite" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\s-norway.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\scotland.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\scotland.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\assets\south_side.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\MapMyPark.apk" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\R.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\res\crunch\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\res\crunch\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\res\crunch\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\res\crunch\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\bin\resources.ap_" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\gen\android\support\v7\appcompat\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\gen\com\google\android\gms\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\gen\com\google\maps\android\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\gen\com\mapmypark\mapmypark\BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\gen\com\mapmypark\mapmypark\Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\gen\com\mapmypark\mapmypark\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\layout\activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\menu\main.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\values-w820dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\src\com\mapmypark\mapmypark\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\src\com\mapmypark\mapmypark\Park.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\src\com\mapmypark\mapmypark\ParkClusterRenderer.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\MapMyPark\src\com\mapmypark\mapmypark\ParksDB.java" afterPath="" />
+    <list default="true" id="418a17bc-6835-4d50-954c-c1e23a8680ad" name="Default" comment="migration to android studio">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapMyPark/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mapMyPark/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mapMyPark/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/mapMyPark/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MapMyPark.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +48,7 @@
       <file leaf-file-name="import-summary.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/import-summary.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.777336" vertical-offset="0" max-vertical-offset="1717">
+            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1717">
               <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
@@ -1101,8 +1076,17 @@
       </map>
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mapMyPark/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/mapMyPark/src/main/res/values/strings.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="244" />
+    <option name="x" value="163" />
+    <option name="y" value="11" />
     <option name="width" value="1655" />
     <option name="height" value="949" />
   </component>
@@ -1132,6 +1116,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1160,6 +1147,38 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapMyPark" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapMyPark" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MapMyPark" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapMyPark" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -1170,9 +1189,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1188,6 +1204,8 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="map" />
   </component>
   <component name="RunManager" selected="Android Application.mapMyPark">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -1355,12 +1373,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="244" y="0" width="1655" height="949" extended-state="0" />
-    <editor active="true" />
+    <frame x="163" y="11" width="1655" height="949" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978058" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1369,22 +1388,22 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31944445" sideWeight="0.4996865" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.4996865" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2520376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.4996865" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2520376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.4996865" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31944445" sideWeight="0.4996865" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1421,6 +1440,22 @@
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1717">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1442,9 +1477,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mapMyPark/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9125249" vertical-offset="408" max-vertical-offset="1037">
+          <caret line="51" column="66" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapMyPark/src/main/java/com/mapmypark/mapmypark/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1734694" vertical-offset="0" max-vertical-offset="3026">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapMyPark/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14225942" vertical-offset="0" max-vertical-offset="478">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapMyPark/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53571427" vertical-offset="0" max-vertical-offset="527">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/import-summary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.777336" vertical-offset="0" max-vertical-offset="1717">
+        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1717">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding />
         </state>
