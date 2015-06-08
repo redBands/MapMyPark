@@ -69,7 +69,7 @@ public class MainActivity extends Activity implements ClusterManager.OnClusterCl
         // get all the parks into a list
         parks = mDB.getAllParks();
         
-        // Set up the Cluster Manager
+        // Set up the cluster manager
         setUpClusterer();
     }
     

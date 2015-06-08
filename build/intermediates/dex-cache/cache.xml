@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\exploded-aar\MapMyPark\library\unspecified\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="db327afac88e4626b3f0e9b8cf6a61697f704d3b">
-        <dex dex="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\pre-dexed\debug\classes-c7c9926eedc404912d9d5f0820648bd47ff3cba6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\pre-dexed\debug\classes-49dbde363a3486e57bb13dcdaff7613eac90df10.jar" />
-    </item>
-    <item
-        jar="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        jar="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-33a5a1a016652dc3fca9fba6f7112744dce21075.jar" />
+        <dex dex="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-5b9be19c326e74f84aa57dea4c41a1763e952f54.jar" />
     </item>
     <item
-        jar="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\pre-dexed\debug\classes-66c940e805e89b8ca8756b7c24a0ad9a5d0b2b6e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Timothy\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-7e9714aae244757d6f769a2993065badc8a84e11.jar" />
-    </item>
-    <item
-        jar="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jar="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
-        <dex dex="C:\Users\Timothy\AndroidstudioProjects\MapMyPark\mapMyPark\build\intermediates\pre-dexed\debug\classes-698625147e1d31449c5b8aa1aab8b3682e43be10.jar" />
+        <dex dex="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/pre-dexed/debug/classes-a5cf8728a1cdf075e5666d17da130d4ffaf82141.jar" />
+    </item>
+    <item
+        jar="/Users/tmothy/development/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-ed10c18c4011d03013f9933f74752b49ee121854.jar" />
+    </item>
+    <item
+        jar="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/exploded-aar/MapMyPark/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9fc86d966115f10f30b42a38d16d693bb37e27a4">
+        <dex dex="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/pre-dexed/debug/classes-d7bb709038e429b737c9ad01431a044c09713247.jar" />
+    </item>
+    <item
+        jar="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/pre-dexed/debug/classes-10f27107add25130a510b961ed7b217c5c91651f.jar" />
+    </item>
+    <item
+        jar="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/tmothy/Android studioProjects/MapMyPark/mapMyPark/build/intermediates/pre-dexed/debug/classes-1482d9f28e8adf9a89f7a00f6efdfc1ee7000fe5.jar" />
     </item>
 
 </items>
